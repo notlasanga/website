@@ -38,7 +38,7 @@ var objAssign = Object.assign;
         // web worker
         PACKAGE_PATH = encodeURIComponent(location.pathname.toString().substring(0, location.pathname.toString().lastIndexOf('/')) + '/');
       }
-      var PACKAGE_NAME = 'bin/flappy.data';
+      var PACKAGE_NAME = 'bin/web/flappy.data';
       var REMOTE_PACKAGE_BASE = 'flappy.data';
       if (typeof Module['locateFilePackage'] === 'function' && !Module['locateFile']) {
         Module['locateFile'] = Module['locateFilePackage'];
@@ -180,10 +180,10 @@ Module['FS_createPath']("/res", "dev", true, true);
             for (var i = 0; i < files.length; ++i) {
               DataRequest.prototype.requests[files[i].filename].onload();
             }
-                Module['removeRunDependency']('datafile_bin/flappy.data');
+                Module['removeRunDependency']('datafile_bin/web/flappy.data');
 
       };
-      Module['addRunDependency']('datafile_bin/flappy.data');
+      Module['addRunDependency']('datafile_bin/web/flappy.data');
     
       if (!Module.preloadResults) Module.preloadResults = {};
     
@@ -204,7 +204,7 @@ Module['FS_createPath']("/res", "dev", true, true);
     }
   
    }
-   loadPackage({"files": [{"filename": "/res/flappy.png", "start": 0, "end": 827}, {"filename": "/res/.DS_Store", "start": 827, "end": 6975}, {"filename": "/res/tubebody.png", "start": 6975, "end": 7488}, {"filename": "/res/background.png", "start": 7488, "end": 9108}, {"filename": "/res/font.png", "start": 9108, "end": 9802}, {"filename": "/res/ground.png", "start": 9802, "end": 10358}, {"filename": "/res/tubetop.png", "start": 10358, "end": 10927}, {"filename": "/res/dev/flappy.kra", "start": 10927, "end": 65428}, {"filename": "/res/dev/background.kra", "start": 65428, "end": 116545}, {"filename": "/res/dev/tube_top.kra", "start": 116545, "end": 159068}, {"filename": "/res/dev/tubebody.kra", "start": 159068, "end": 188991}, {"filename": "/res/dev/ground.kra", "start": 188991, "end": 646135}, {"filename": "/res/dev/font.kra", "start": 646135, "end": 680931}], "remote_package_size": 680931, "package_uuid": "b9957883-57e2-4693-b663-be837e7fe564"});
+   loadPackage({"files": [{"filename": "/res/flappy.png", "start": 0, "end": 827}, {"filename": "/res/.DS_Store", "start": 827, "end": 6975}, {"filename": "/res/tubebody.png", "start": 6975, "end": 7488}, {"filename": "/res/background.png", "start": 7488, "end": 9108}, {"filename": "/res/font.png", "start": 9108, "end": 9802}, {"filename": "/res/ground.png", "start": 9802, "end": 10358}, {"filename": "/res/tubetop.png", "start": 10358, "end": 10927}, {"filename": "/res/dev/flappy.kra", "start": 10927, "end": 65428}, {"filename": "/res/dev/background.kra", "start": 65428, "end": 116545}, {"filename": "/res/dev/tube_top.kra", "start": 116545, "end": 159068}, {"filename": "/res/dev/tubebody.kra", "start": 159068, "end": 188991}, {"filename": "/res/dev/ground.kra", "start": 188991, "end": 646135}, {"filename": "/res/dev/font.kra", "start": 646135, "end": 680931}], "remote_package_size": 680931, "package_uuid": "bd5bc841-cb61-4b7a-b09a-24a3e75a96f7"});
   
   })();
   
@@ -9235,13 +9235,13 @@ var asm = createWasm();
 var ___wasm_call_ctors = Module["___wasm_call_ctors"] = createExportWrapper("__wasm_call_ctors");
 
 /** @type {function(...*):?} */
-var _main = Module["_main"] = createExportWrapper("main");
-
-/** @type {function(...*):?} */
 var _malloc = Module["_malloc"] = createExportWrapper("malloc");
 
 /** @type {function(...*):?} */
 var _free = Module["_free"] = createExportWrapper("free");
+
+/** @type {function(...*):?} */
+var _main = Module["_main"] = createExportWrapper("main");
 
 /** @type {function(...*):?} */
 var _memcpy = Module["_memcpy"] = createExportWrapper("memcpy");

@@ -131,7 +131,6 @@ var objAssign = Object.assign;
         if (!check) throw msg + new Error().stack;
       }
   Module['FS_createPath']("/", "res", true, true);
-Module['FS_createPath']("/res", "dev", true, true);
 
           /** @constructor */
           function DataRequest(start, end, audio) {
@@ -204,7 +203,7 @@ Module['FS_createPath']("/res", "dev", true, true);
     }
   
    }
-   loadPackage({"files": [{"filename": "/res/flappy.png", "start": 0, "end": 827}, {"filename": "/res/.DS_Store", "start": 827, "end": 6975}, {"filename": "/res/tubebody.png", "start": 6975, "end": 7488}, {"filename": "/res/background.png", "start": 7488, "end": 9108}, {"filename": "/res/font.png", "start": 9108, "end": 9802}, {"filename": "/res/ground.png", "start": 9802, "end": 10358}, {"filename": "/res/tubetop.png", "start": 10358, "end": 10927}, {"filename": "/res/dev/flappy.kra", "start": 10927, "end": 65428}, {"filename": "/res/dev/background.kra", "start": 65428, "end": 116545}, {"filename": "/res/dev/tube_top.kra", "start": 116545, "end": 159068}, {"filename": "/res/dev/tubebody.kra", "start": 159068, "end": 188991}, {"filename": "/res/dev/ground.kra", "start": 188991, "end": 646135}, {"filename": "/res/dev/font.kra", "start": 646135, "end": 680931}], "remote_package_size": 680931, "package_uuid": "bd5bc841-cb61-4b7a-b09a-24a3e75a96f7"});
+   loadPackage({"files": [{"filename": "/res/flappy.png", "start": 0, "end": 827}, {"filename": "/res/tubebody.png", "start": 827, "end": 1340}, {"filename": "/res/background.png", "start": 1340, "end": 2960}, {"filename": "/res/font.png", "start": 2960, "end": 3654}, {"filename": "/res/ground.png", "start": 3654, "end": 4210}, {"filename": "/res/tubetop.png", "start": 4210, "end": 4779}, {"filename": "/res/data", "start": 4779, "end": 4780}], "remote_package_size": 4780, "package_uuid": "d808fc36-2118-4564-bd4c-54d80996259a"});
   
   })();
   

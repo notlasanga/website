@@ -1,0 +1,146 @@
+header {
+    height: 120px;
+    text-align: center;
+    line-height: 120px;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+}
+
+canvas {
+    width: calc(100% - 210px);
+    aspect-ratio: 1.414 / 1;
+    border-radius: 3px;
+    box-shadow: 0 0 3px gray;
+}
+
+.adjuster_label {
+    display: inline-block;
+    margin-left: auto;
+    text-align: right;
+}
+
+.slider-input {
+    text-align: center;
+    border-radius: 5px;
+    width: 40px;
+    height: 20px;
+    border: 0px;
+    padding: 0px;
+    background-color: lightgray;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.panel {
+    width: 200px;
+    display: flex;
+    gap: 10px;
+    flex-flow: column;
+}
+
+.date-panel {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+.adjuster-panel {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    gap: 5px 0;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.adjuster {
+    display: flex;
+    gap: 10px;
+}
+
+#month_selector {
+    flex: 1;
+    font-size: 20px;
+}
+
+#year_selector {
+    width: 50px;
+    font-size: 20px;
+}
+
+#download_button {
+    font-size: 32px;
+    width: auto;
+    line-height: 60px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 9px;
+    user-select: none;
+    background-color: #5589E2;
+    color: white;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: lightgray;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background: rgba(0, 0, 0, 0);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+.rainbow_background {
+    width: 40px;
+    height: 20px;
+    margin-left: -50px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,154,0,1) 10%, rgba(208,222,33,1) 20%, rgba(79,220,74,1) 30%, rgba(63,218,216,1) 40%, rgba(47,201,226,1) 50%, rgba(28,127,238,1) 60%, rgba(95,21,242,1) 70%, rgba(186,12,248,1) 80%, rgba(251,7,217,1) 90%, rgba(255,0,0,1) 100%);
+}

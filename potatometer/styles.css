@@ -1,0 +1,198 @@
+@font-face {
+    font-family: Itim;
+    src: url(fonts/Itim-Regular.ttf);
+}
+
+@font-face {
+    font-family: Inconsolata;
+    src: url(fonts/Inconsolata-Medium.ttf);
+}
+
+.arrow {
+    width: 44px;
+    height: 40px;
+}
+
+.greenButton {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 942px;
+    height: 277px;
+    left: 212px;
+    top: 600px;
+
+    background: #B3EBD0;
+    border: 4px solid #000000;
+    border-radius: 40px;
+
+    font-family: 'Itim';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 175px;
+    line-height: 210px;
+
+    color: #000000;
+}
+
+@media(hover: hover) and (pointer: fine) {
+    .greenButton:hover {
+        background: #9fd1b9;
+    }
+}
+
+.greenButton:active {
+    background: #8cbaa4;
+}
+
+.timeBox {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 643px;
+    height: 249px;
+    top: 149px;
+
+    background: #EAF6FF;
+    border: 4px solid #000000;
+    border-radius: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 200px;
+    line-height: 240px;
+
+    color: #000000;
+}
+
+.button {
+    box-sizing: border-box;
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+
+    border: 4px solid #000000;
+    background: #FFFFFF;
+}
+
+@media(hover: hover) and (pointer: fine) {
+    .button:hover {
+        background: #e8e8e8;
+    }
+}
+
+.button.playerToggle {
+    width: 44px;
+    height: 59px;
+    top: 82px;
+    padding: 0;
+}
+
+.numberFont {
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 52px;
+    color: #000000;
+    text-align: center;
+    -webkit-text-size-adjust: none;
+}
+
+.button.playerToggle.left {
+    left: 324px;
+}
+
+.button.playerToggle.right {
+    left: 1002px;
+}
+
+.button.time {
+    width: 44px;
+    height: 51px;
+    top: 415px;
+}
+
+.button.time.down {
+    transform: rotate(180deg);
+}
+
+.button.mute {
+    width: 155px;
+    height: 61px;
+    left: 268px;
+    top: 904px;
+}
+
+.button.unmute {
+    width: 199px;
+    height: 61px;
+    left: 246px;
+    top: 904px;
+}
+
+.button.pause {
+    width: 155px;
+    height: 61px;
+    left: 605px;
+    top: 903px;
+}
+
+.button.continue {
+    width: 223px;
+    height: 61px;
+    left: 571px;
+    top: 903px;
+}
+
+.button.reset {
+    width: 155px;
+    height: 61px;
+    left: 942px;
+    top: 903px;
+}
+
+.row3 {
+    position: absolute;
+    width: 173px;
+    height: 58px;
+    top: 480px;
+}
+
+.text {
+    font-family: 'Itim';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 60px;
+
+    color: #000000;
+}
+
+.hiddenImage {
+    visibility: hidden;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+}
+
+.hiddenImage.left {
+    visibility: visible;
+    left: 246px;
+    top: 396px;
+}
+
+.hiddenImage.right {
+    visibility: visible;
+    left: 924px;
+    top: 398px;
+}

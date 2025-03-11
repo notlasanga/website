@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Potato Meter</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/Favicon.png"/>
+</head>
+
+<body>
+    <button class="button playerToggle numberFont left" id="playerToggleButton1" type="button" onclick="toggle_players()">1</button>
+    <button class="button playerToggle numberFont right" id="playerToggleButton2" type="button" onclick="toggle_players()">2</button>
+
+    <div class="timeBox" id="timeBox1" style="left:24px">3:00</div>
+    <div class="timeBox" id="timeBox2" style="left:698px">3:00</div>
+    <button class="greenButton start" id="startButton" type="button" onclick="start_button_clicked()">
+        <span class="largeText">Start</span>
+        <img src="images/Star.png" style="position:absolute; width: 250px;height: 250px;left: 9px;top: 14px;">
+        <img src="images/Smile.png" style="position:absolute; width: 250px;height: 250px;left: 673px;top: 14px;">
+    </button>
+
+    <button class="button time" style="left:83px" type="button" onclick="adjust_time(0, 60000)">
+        <img class="arrow" src="images/arrow.svg"/>
+    </button>
+    <button class="button time down" style="left:166px" type="button" onclick="adjust_time(0, -60000)">
+        <img class="arrow" src="images/arrow.svg"/>
+    </button>
+    <button class="button time" style="left:472px" type="button" onclick="adjust_time(0, 1000)">
+        <img class="arrow" src="images/arrow.svg"/>
+    </button>
+    <button class="button time down" style="left:555px" type="button" onclick="adjust_time(0, -1000)">
+        <img class="arrow" src="images/arrow.svg"/>
+    </button>
+    <button class="button time" style="left:761px" type="button" onclick="adjust_time(1, 60000)">
+        <img class="arrow" src="images/arrow.svg"/>
+    </button>
+    <button class="button time down" style="left:844px" type="button" onclick="adjust_time(1, -60000)">
+        <img class="arrow" src="images/arrow.svg"/>
+    </button>
+    <button class="button time" style="left:1150px" type="button" onclick="adjust_time(1, 1000)">
+        <img class="arrow" src="images/arrow.svg"/>
+    </button>
+    <button class="button time down" style="left:1233px" type="button" onclick="adjust_time(1, -1000)">
+        <img class="arrow" src="images/arrow.svg"/>
+    </button>
+
+    <img id="deadPotato" class="hiddenImage" src="images/Dead.png"/>
+    <img id="kingPotato" class="hiddenImage" src="images/King.png"/>
+    <img id="knifePotato" class="hiddenImage" src="images/Knife.png"/>
+    <img id="sadPotato" class="hiddenImage" src="images/Sad.png"/>
+
+    <div class="row3 text" style="left:64px">Minutes</div>
+    <div class="row3 text" style="left:450px">Seconds</div>
+    <div class="row3 text" style="left:742px">Minutes</div>
+    <div class="row3 text" style="left:1128px">Seconds</div>
+
+    <button class="button text mute" id="muteButton" type="button" onclick="mute()">Mute</button>
+    <button class="button text pause" id="pauseButton" type="button" onclick="pause()">Pause</button>
+    <button class="button text reset" id="resetButton" type="button" onclick="reset()">Reset</button>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

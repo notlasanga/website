@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calendar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Calendar Maker</h1>
+    </header>
+    <main>
+        <canvas id="canvas" width="3300" height="2550"></canvas>
+        <div class="panel">
+            <div class="date-panel">
+                <select onchange="a()" id="month_selector">
+                    <option value=0>January</option>
+                    <option value=1>February</option>
+                    <option value=2>March</option>
+                    <option value=3>April</option>
+                    <option value=4>May</option>
+                    <option value=5>June</option>
+                    <option value=6>July</option>
+                    <option value=7>August</option>
+                    <option value=8>September</option>
+                    <option value=9>October</option>
+                    <option value=10>November</option>
+                    <option value=11>December</option>
+                </select>
+                <input type="number" placeholder="Year" onchange=a() id="year_selector">
+            </div>
+            <div class="adjuster-panel"> 
+                <div class="adjuster">
+                    <label for="margin_adjuster" class="adjuster_label">Margin</label>
+                    <input type="number" inputmode="decimal" value="1" step="0.01" oninput="a()" onmousedown="h(event, 0)" class="slider-input" id="margin_adjuster">
+                </div>
+                <div class="adjuster">
+                    <label for="month_adjuster" class="adjuster_label">Month Height</label>
+                    <input type="number" inputmode="decimal" value="1" step="0.01" oninput="a()" onmousedown="h(event, 1)" class="slider-input" id="month_adjuster">
+                </div>
+                <div class="adjuster">
+                    <label for="day_adjuster" class="adjuster_label">Day Height</label>
+                    <input type="number" inputmode="decimal" value="0.5" step="0.01" oninput="a()" onmousedown="h(event, 2)" class="slider-input" id="day_adjuster">
+                </div>
+                <div class="adjuster">
+                    <label class="adjuster_label">Month Text</label>
+                    <label class="switch">
+                        <input type="checkbox" checked="true" onchange="b(0)">
+                        <span class="slider"></span>
+                    </label>
+                    <label class="rainbow_background"></label>
+                </div>
+                <div class="adjuster">
+                    <label class="adjuster_label">Days Text</label>
+                    <label class="switch">
+                        <input type="checkbox" checked="true" onchange="b(1)">
+                        <span class="slider"></span>
+                    </label>
+                    <label class="rainbow_background"></label>
+                </div>
+            </div>
+            <a id="download_button">Download</a>
+        </div>
+    </main>
+    
+    <script src="index.js"></script>
+</body>
+
+</html>
